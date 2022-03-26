@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,11 +6,11 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.OleDb;
 using System.Windows.Forms;
 
-namespace _1Prelab
+namespace prelab1
 {
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -19,14 +19,14 @@ namespace _1Prelab
         }
 
         // Default username and passwords
-        private void btnadmin_Click(object sender, EventArgs e)
+        private void rbtnadmin_CheckedChanged(object sender, EventArgs e)
         {
-            txtpassword.Text = "admin"; 
+            txtpassword.Text = "admin";
             txtusername.Text = "admin";
         }
 
         // Default username and passwords
-        private void btnuser_Click(object sender, EventArgs e)
+        private void rbtnuser_CheckedChanged(object sender, EventArgs e)
         {
             txtpassword.Text = "user";
             txtusername.Text = "user";
@@ -83,5 +83,6 @@ namespace _1Prelab
             }
         }
 
+        
     }
 }
